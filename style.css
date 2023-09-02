@@ -1,0 +1,91 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #007BFF;
+}
+
+/* Add more CSS styles as needed for your specific design and layout */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+/* styles.css */
+
+/* CSS for the photo grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between photos */
+}
+
+.photo {
+    overflow: hidden;
+    border: 2px solid #ddd; /* Add a border to each photo for separation */
+    position: relative;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+    aspect-ratio: 1; /* Maintain aspect ratio for the container */
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.photo:hover {
+    transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+
+    section {
+        padding: 10px; /* Reduce padding for smaller screens */
+        margin: 10px;
+    }
+    
+    h2 {
+        font-size: 24px; /* Reduce heading font size for smaller screens */
+    }
+    
+    p {
+        font-size: 16px; /* Reduce paragraph font size for smaller screens */
+    }
+    
+    /* Adjust other styles as needed for better readability on smaller screens */
+}
+
